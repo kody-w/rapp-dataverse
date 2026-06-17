@@ -11,9 +11,19 @@ hatches the brainstem into a real instance by twin sync, ready to chat in **Copi
 | Path | What |
 |------|------|
 | [`SPEC.md`](SPEC.md) | The spec: OOTB encoding, the brainstem loop, the vTwin, the hatcher, conformance |
+| [`chat/`](chat/) | **Browser vBrainstem** — live chat grounded by the vTwin, reasoning via the GitHub Copilot API |
 | [`twin/`](twin/) | The **vTwin** — a server-less, OData-shaped Dataverse Web API (a 1:1 digital twin) |
 | [`cli/`](cli/) | **`rapp-dv`** — the CLI hatcher (twin sync into a real Dataverse via an application user) |
 | [`brainstem/`](brainstem/) | The OOTB mapping, AI Builder **router prompt**, and Power Automate **orchestrator flow** |
+
+## Chat with it now (browser, GitHub Pages)
+
+[**`chat/`**](https://kody-w.github.io/rapp-dataverse/chat/) is a single-page vBrainstem:
+**grounding** (soul, agents, memory, history) is read live from the static **Dataverse vTwin**, and
+the **GitHub Copilot API** drives the reasoning and tool-calls — the same brainstem loop as
+`brainstem.py`, but with the inference engine swapped for Copilot instead of Power Platform AI
+Builder. Add a GitHub token (with Copilot access) in Settings — it's exchanged for a Copilot token
+in your browser and never leaves it.
 
 ## Quickstart — zero setup (no Dataverse needed)
 
